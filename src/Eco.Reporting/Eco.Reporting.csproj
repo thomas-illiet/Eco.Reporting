@@ -15,6 +15,10 @@
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
         <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <NoWarn>CA1416</NoWarn>
+    </PropertyGroup>
     
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
         <OutputPath>D:\Programmes\Steam\steamapps\common\Eco Server\Mods\UserCode\Reporting</OutputPath>
