@@ -24,5 +24,15 @@ namespace Eco.Reporting.Services
             foreach (var item in items)
                 yield return new ItemDto(item);
         }
+        
+        /// <summary>
+        /// Retrieves an item object.
+        /// </summary>
+        /// <param name="name">The name of the item.</param>
+        public static ItemDto? GetItem(string name)
+        {
+            var result = Item.AllItemsIncludingHidden.FirstOrDefault(x => x.Name == name);
+            return result == default ? default : new ItemDto(result);
+        }
     }
 }
