@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Eco.ReferenceAssemblies" Version="0.10.2.1-beta-release-647" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>D:\Programmes\Steam\steamapps\common\Eco Server\Mods\UserCode\Reporting</OutputPath>
+    </PropertyGroup>
+
+</Project>
